@@ -1,0 +1,23 @@
+PyInstaller Build Directories
+/build/
+/dist/
+*.spec
+
+Python Cache & Compiled Files
+__pycache__/
+*.py[cod]
+*$py.class
+
+App Logs & Temp Output
+*.log
+cleaner_error.log
+pyinstaller.txt
+
+Virtual Environments (If you ever add one)
+venv/
+env/
+.venv/
+
+OS Generated Files
+.DS_Store
+Thumbs.db

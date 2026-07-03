@@ -1,0 +1,7 @@
+darkdetect==0.8.0
+eel==0.18.2
+keyboard==0.13.5
+Pillow==12.3.0
+pyperclip==1.11.0
+pystray==0.19.5
+pywin32==311

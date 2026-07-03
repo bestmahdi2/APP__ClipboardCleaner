@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Clipboard History</title>
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="stylesheet" href="font-awesome.all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-bar">
+    <div class="controls">
+        <button id="btn-pin" class="icon-btn" title="Pin Window"><i class="fa-solid fa-thumbtack"></i></button>
+        <button id="btn-pause" class="icon-btn" title="Pause Cleaning"><i class="fa-solid fa-play"></i></button>
+    </div>
+    <div class="filters">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search-input" placeholder="Search history...">
+        </div>
+        <input type="date" id="date-filter" class="date-input" title="Filter by date">
+    </div>
+    <div class="toggles">
+        <label class="switch">
+            <input type="checkbox" id="toggle-diff" checked>
+            <span class="slider round"></span>
+            <span class="label-text">Clean Diffs</span>
+        </label>
+        <label class="switch">
+            <input type="checkbox" id="toggle-dedent">
+            <span class="slider round"></span>
+            <span class="label-text">Smart Dedent</span>
+        </label>
+        <button id="btn-clear" class="icon-btn danger-btn" title="Clear All History"><i
+                class="fa-solid fa-trash-can"></i></button>
+    </div>
+</div>
+
+<div class="headers">
+    <h2>Original</h2>
+    <h2>Cleaned</h2>
+</div>
+<div id="new-items-btn" class="new-items-btn"><i class="fa-solid fa-arrow-up"></i> 0 New Items</div>
+<div id="scroll-container" class="scroll-container">
+    <!-- Rows dynamically injected here -->
+</div>
+
+<div id="toast" class="toast">Action completed</div>
+
+<script src="app.js"></script>
+</body>
+</html>
