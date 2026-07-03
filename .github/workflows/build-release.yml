@@ -61,4 +61,4 @@ jobs:
           name: "Latest Main Build"
           body: "Automated rolling release containing the latest 32-bit and 64-bit builds from the main branch."
           files: artifacts/*.exe
-          prerelease: true # Keeps it marked as a pre-release so it acts like a rolling beta
+          prerelease: false
