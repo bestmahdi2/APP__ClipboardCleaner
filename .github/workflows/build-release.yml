@@ -3,7 +3,7 @@ name: Build and Release Windows EXE
 on:
   push:
     branches:
-      - master # Triggers every time you push to the master branch
+      - main # Triggers every time you push to the main branch
 
 Gives GitHub Actions permission to create/update releases
 permissions:
@@ -58,7 +58,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          name: "Latest Master Build"
-          body: "Automated rolling release containing the latest 32-bit and 64-bit builds from the master branch."
+          name: "Latest Main Build"
+          body: "Automated rolling release containing the latest 32-bit and 64-bit builds from the main branch."
           files: artifacts/*.exe
           prerelease: true # Keeps it marked as a pre-release so it acts like a rolling beta
