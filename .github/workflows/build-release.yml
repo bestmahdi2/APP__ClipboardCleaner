@@ -5,7 +5,7 @@ on:
     branches:
       - main # Triggers every time you push to the main branch
 
-Gives GitHub Actions permission to create/update releases
+# Gives GitHub Actions permission to create/update releases
 permissions:
   contents: write
 
